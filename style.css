@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    min-width: 320px;
+}
+header,footer {
+    position: fixed;
+    min-width: 320px;
+}
+header {
+    background-color: #5FC0CD;
+    height: 3.3rem;
+    width: 100%;
+}
+header a {
+    float: left;
+    line-height: 3.3rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    padding-left: 1.4rem;
+}
+header h1 {
+    text-align: center;
+    line-height:3.3rem;
+    font-size: 1.6rem;
+    color: white;
+    margin:0 4rem;
+}
+.user-section {
+    background: url("image/back-photo.png") no-repeat center ;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
