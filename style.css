@@ -37,7 +37,7 @@ main {
     padding: 3.3rem 0;
 }
 .user-section {
-    background: url("image/back-photo.png") no-repeat center ;
+    background: url("image/back-photo.png") no-repeat left center ;
     -webkit-background-size: cover;
     background-size: cover;
     height: 16.3rem;
@@ -81,14 +81,13 @@ main {
     padding-top: 0.5rem;
 }
 ul,li {
-    list-style: none;
+    list-style: none;/*去除，列表默认样式*/
 
 }
 .user-form {
     font-size: 1.2rem;
 }
 .user-form-title {
-    /*height: 5rem;*/
     padding: 0 1rem;
     line-height: 5rem;
     border-bottom: 1px solid #ccc;
@@ -108,7 +107,7 @@ ul,li {
 
 }
 .user-form-tag {
-    background: url("image/star-icon.png") no-repeat left center;
+    background: url("image/star-icon.png") no-repeat left center;/*插入背景图片，不重复，水平位置靠左，垂直位置居中*/
     font-size: 1.4rem;
     line-height: 5rem;
     -webkit-background-size: 1.2rem;
@@ -117,9 +116,9 @@ ul,li {
 }
 .user-form-label {
     position: absolute;
-    top: 50%;
     width: 5rem;
-
+    /*垂直居中*/
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -137,28 +136,32 @@ footer {
     font-size: 1.6rem;
     display: flex;
     display: -webkit-flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row nowrap;/*沿主轴行项目排列，不换行*/
+    justify-content: center;/*flex项目在主轴线上的对齐方式*/
+    align-items: center;/*flex项目在测轴上的对齐方式*/
     bottom: 0;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
+    background-color: white;
 
 }
-footer div {
-    flex-grow: 1;
+footer button {
+    flex-grow: 1;/*flex项目伸缩空间相等*/
+    outline: none;/*去除点击时的边框*/
     border: 2px solid #5FC0CD;
     line-height: 3.3rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     border-radius: 1rem;
     text-align: center;
-    width: 50%;
+    width: 50vw;
+    margin: 0 1rem;
+    cursor: pointer;/*鼠标移动到项目上时的光标显示*/
 
 }
 .footer-but-mes {
     color: #5FC0CD;
+    background-color: white;
 
-    margin-right: 2rem;
 }
 .footer-but-connect {
     background-color: #5FC0CD;
